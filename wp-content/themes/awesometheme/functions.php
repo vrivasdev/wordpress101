@@ -7,3 +7,13 @@ function awesome_script_enqueue()
 }
 
 add_action('wp_enqueue_scripts', 'awesome_script_enqueue');
+
+function awesome_theme_setup()
+{   // ir activates the menu support on the theme
+	add_theme_support('menus');
+
+	register_nav_menu('primary', 'Primary Header Navigation');
+	register_nav_menu('secondary', 'Footer Navigation');
+}
+// If the theme starts the menu is going to be activated
+add_action('init', 'awesome_theme_setup');
