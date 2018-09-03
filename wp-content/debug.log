@@ -6,3 +6,6 @@ Stack trace:
 #3 {main}
   thrown in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 3
 [31-Aug-2018 20:05:19 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /var/www/html/wordpress101/wp-includes/class-wp-hook.php on line 300
+[03-Sep-2018 19:47:31 UTC] WP_Community_Events::maybe_log_events_response: Valid response received. Details: {"api_url":"https:\/\/api.wordpress.org\/events\/1.0\/","request_args":{"body":{"number":5,"ip":"::","locale":"en_US","timezone":"America\/Caracas"}},"response_code":200,"response_body":{"location":{"ip":"200.74.201.250"},"events":"1 events trimmed."}}
+[03-Sep-2018 20:04:57 UTC] PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /var/www/html/wordpress101/wp-includes/media.php on line 2833
+[03-Sep-2018 20:04:57 UTC] PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /var/www/html/wordpress101/wp-includes/class-wp-image-editor-gd.php on line 296
