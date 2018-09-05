@@ -2,30 +2,51 @@
 
 <div class="row">
 	
-	<div class="col-xs-12">
-		<?php 
+		<?php 	
 			/*
-				========================
-				  Print the first post
-				========================
+				===================================
+				  Lastest post for each category
+				===================================
 			*/
-			$lastBlog = new WP_Query('type=post&posts_per_page=1'); // New empty query post copy from the original
+			$categories = get_categories(
+				array(
+					'include' => '7, 8, 9'
+				)
+			);
 
-			if( $lastBlog->have_posts() ):
+			foreach($categories as $category):
 
-				while( $lastBlog->have_posts()):
+				$lastBlog = new WP_Query(
+					array(
+						'type'             => 'post',
+						'posts_per_page'   => 1,
+						'category__in'     => $category->term_id,
+						'category__not_in' => array( 10 ) // exclude Random category
+					)
+				); // New empty query post copy from the original 
 
-					$lastBlog->the_post();
+				if( $lastBlog->have_posts() ):
+					
+					while( $lastBlog->have_posts() ): $lastBlog->the_post(); ?>
+											
+						<div class="col-xs-12 col-sm-4">
 
-					get_template_part('content', get_post_format()); 
+							<?php get_template_part('content', 'featured');?>
 
-				endwhile;
-			endif;
+						</div>
 
-			wp_reset_postdata(); // Reset query post data if we're gonna use the same variable
+					<?php endwhile;?>
 
-		 ?>	
-	</div>
+				<?php endif;?>
+
+				<?php wp_reset_postdata();?><!-- Reset query post data if we're gonna use the same variable -->
+
+			<?php endforeach;
+		?>
+</div>
+
+<div class="row">
+	<hr>
 
 	<div class="col-xs-12 col-sm-8">
 
@@ -79,7 +100,7 @@
 				=======================
 			*/
 			// posts_per_page=-1 => No limit
-			$lastBlog = new WP_Query('type=post&posts_per_page=-1&category_name=tutorials'); // New empty query post copy from the original
+			/*$lastBlog = new WP_Query('type=post&posts_per_page=-1&category_name=tutorials'); // New empty query post copy from the original
 
 			if( $lastBlog->have_posts() ):
 
@@ -93,8 +114,8 @@
 			endif;
 
 			wp_reset_postdata(); // Reset query post data if we're gonna use the same variable
-
-		 ?>	
+			*/
+		 ?>
 
 	</div>
 
