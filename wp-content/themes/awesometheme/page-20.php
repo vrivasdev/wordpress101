@@ -1,19 +1,27 @@
 <?php get_header(); ?>
 
-	<?php if( have_posts()):?>
+<div class="row">
+	<div class="col-xs-12 col-sm-8">
 
-		<?php while( have_posts()):?>	
+		<?php if( have_posts()):?>
 
-			<?php the_post();?>			
+			<?php while( have_posts()):?>	
 
-			<p><?php the_content(); ?></p>
-			
-			<h3><?php the_title(); ?></h3>
+				<?php the_post();?>			
 
-			<hr>
+				<p><?php the_content(); ?></p>
+				
+				<h3><?php the_title(); ?></h3>
 
-		<?php endwhile;?>
+				<hr>
 
-	<?php endif;?>
+			<?php endwhile;?>
+
+		<?php endif;?>
+	</div>
+	
+	<div class="col-xs-12 col-sm-4">
+		<?php get_sidebar(); ?>
+	</div>
 
 <?php get_footer(); ?>
