@@ -1,1 +1,2 @@
 // javascript functions
+//$("#carousel").carousel();
