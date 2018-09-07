@@ -142,3 +142,28 @@ Stack trace:
 [07-Sep-2018 16:08:09 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
 [07-Sep-2018 16:08:17 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
 [07-Sep-2018 16:09:32 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 16:14:46 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 16:14:52 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 16:16:57 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 16:17:06 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 16:17:46 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 16:17:46 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 16:17:46 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 16:17:47 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 16:17:49 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 16:17:51 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 16:17:53 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 16:17:55 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 16:18:12 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 16:36:59 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 16:37:05 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 16:37:07 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 16:37:18 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 16:37:30 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 19:06:41 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 19:10:08 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 19:22:43 UTC] PHP Notice:  Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in /var/www/html/wordpress101/wp-includes/functions.php on line 3962
+[07-Sep-2018 19:24:30 UTC] PHP Notice:  Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in /var/www/html/wordpress101/wp-includes/functions.php on line 3962
+[07-Sep-2018 19:24:58 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
+[07-Sep-2018 19:24:59 UTC] PHP Notice:  Theme without comments.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a comments.php template in your theme. in /var/www/html/wordpress101/wp-includes/functions.php on line 3962
+[07-Sep-2018 19:25:26 UTC] PHP Notice:  Undefined variable: class in /var/www/html/wordpress101/wp-content/themes/awesometheme/index.php on line 18
