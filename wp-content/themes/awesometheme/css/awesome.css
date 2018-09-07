@@ -4,13 +4,13 @@
 
 .carousel .item {
 	height  : 350px;
-	overflow: hidden;	
+	overflow: hidden;		
 }
 
 .carousel .item img {
 	width     : 100%;
 	height    : auto;
-	margin-top: -35%;
+	margin-top: -35%;	
 }
 
 .carousel-caption a,
@@ -22,10 +22,19 @@
 	background-position: center center;
 	background-repeat  : no-repeat;
 	background-size    : cover; /* 100% of element*/
+	color              : #FFFFFF;
+}
+
+.carousel-caption {
+	height: 140px;
+}
+
+.carousel-caption h1 {
+	height: 40px;
 }
 
 .blog-element a {
-	color: #fff;
+	color      : #fff;
 	text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 

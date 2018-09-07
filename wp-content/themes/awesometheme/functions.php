@@ -40,8 +40,8 @@ add_action('init', 'awesome_theme_setup'); /* It could be after, before or init 
 add_theme_support('custom-background');
 add_theme_support('custom-header');
 add_theme_support('post-thumbnails');
-
 add_theme_support('post-formats', array('aside', 'image', 'video'));
+add_theme_support('html5', array('search-form')); // Theme support for html5 serach forms
 
 /*
 	======================================
