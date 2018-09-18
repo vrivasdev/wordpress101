@@ -1,11 +1,20 @@
+<!-- POST PAGE -->
 <?php get_header(); ?>
 
 <div class="row">
 	<div class="col-xs-12 col-sm-8">
 		<div class="row text-center">	
+					
+			<?php query_posts( array(
+								'posts_per_page' => 3, 
+								'paged'          => (get_query_var('paged')) ? get_query_var('paged') : 1
+								) 
+							);
+			?>
+
 			<?php if( have_posts()): $i = 0;?>
 
-				<?php while( have_posts()): the_post();?>											
+				<?php while( have_posts()): the_post();?>
 
 					<?php 
 						/* It prints the number of columns depending of each post numbers */
@@ -30,7 +39,15 @@
 
 				<?php $i++; endwhile;?>
 
+				<div class="col-xs-6 text-left">
+					<?php next_posts_link('<< Older Posts'); ?>
+				</div>
+				<div class="col-xs-6 text-right">
+					<?php previous_posts_link('Newer Posts >>'); ?>
+				</div>
+
 			<?php endif;?>
+			<?php wp_reset_query(); ?>
 
 		</div>
 	</div>

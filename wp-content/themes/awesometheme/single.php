@@ -1,3 +1,4 @@
+<!-- SINGLE BLOG POST PAGE -->
 <?php get_header(); ?>
 
 <div class="row">
@@ -22,6 +23,13 @@
 					<?php the_content(); ?>
 
 					<hr>
+
+					<div class="row">
+						<div class="col-xs-6 text-left"><?php previous_post_link(); ?></div>
+						<div class="col-xs-6 text-left"><?php next_post_link(); ?></div>
+					</div>
+
+					<?php next_post_link( '%link &raquo;', '%title', false, '', 'category' ); ?>
 
 					<?php if ( comments_open() ):?>
 
