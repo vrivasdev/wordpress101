@@ -66,3 +66,10 @@ function awesome_widget_setup() {
 }
 
 add_action('widgets_init', 'awesome_widget_setup');
+
+/*
+	======================================
+	  Include Walker file
+	======================================
+*/
+require get_template_directory() . '/inc/walker.php';
