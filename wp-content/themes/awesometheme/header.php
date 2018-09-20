@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>Awesome Theme</title>
-		<meta charset="UTF-8">
+<html <?php language_attributes();?>>
+	<head>		
+		<meta charset="<?php bloginfo('charset');?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">		
+		<title><?php bloginfo('name');?> <?php wp_title(' | ');?></title> <!-- I will print "Blog title" >> "Post title" -->
+		<meta name="description" content="<?php bloginfo('description');?>">
 		<?php wp_head();?> <!-- It calls all header included files -->
 	</head>
 	
