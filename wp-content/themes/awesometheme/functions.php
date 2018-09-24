@@ -98,10 +98,10 @@ function awesome_custom_post_type (){
 		'singular_name'      => 'Portfolio',
 		'add_new'            => 'Add Item',
 		'all_items'          => 'All items',
-		'add_new_item'       => 'Edit Item',
+		'add_new_item'       => 'Add Item',
 		'edit_item'          => 'Edit Item',
 		'new_item'           => 'New Item',
-		'new_item'           => 'New Item',
+		'view_item'          => 'View Item',
 		'search_item'        => 'Search Portfolio',
 		'not_found'          => 'No items found',
 		'not_found_in_trash' => 'No items found in trash',
@@ -133,4 +133,3 @@ function awesome_custom_post_type (){
 }
 
 add_action('init', 'awesome_custom_post_type'); // we call the inicialization before the theme runs
-
