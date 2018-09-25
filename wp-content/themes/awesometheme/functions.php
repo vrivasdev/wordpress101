@@ -124,7 +124,7 @@ function awesome_custom_post_type (){
 			'thumbnail',
 			'revisions'
 		),
-		'taxonomies'          => array('category', 'post_tag'),
+		//'taxonomies'          => array('category', 'post_tag'), // enabled general tags and categories
 		'menu_position'       => 5,
 		'exclude_from_search' => false // I don't want this element excluded from the search result
 	);
@@ -133,3 +133,38 @@ function awesome_custom_post_type (){
 }
 
 add_action('init', 'awesome_custom_post_type'); // we call the inicialization before the theme runs
+
+function awesome_custom_taxonomies() {
+
+	// add new taxonomy hierarchical
+	$labels = array(
+		'name'              => 'Types',
+		'singular_name'     => 'Type',
+		'search_items'      => 'Search Types',
+		'all_items'         => 'All Types',
+		'parent_item'       => 'Parent Type',
+		'parent_item_colon' => 'Parent Type:',
+		'edit_item'         => 'Edit Type',
+		'update_item'       => 'Update Type',
+		'add_new_item'      => 'Add New Type',
+		'new_item_name'     => 'New Type Name',
+		'menu_name'         => 'Type'
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true, // Activate the hability to create custom queries and directly query this custom taxonomies		
+		/* rewrite slug of custom taxonomy. Ex: mysite.com/development => without rewrite 
+		   mysite.com/type/development => with rewrite*/
+		'rewrite'           => array('slug' => 'type') 
+	);
+
+	register_taxonomy('type', array('portfolio'), $args );// array('portfolio'): It means that the taxonomy will be applied to this CPT
+
+	// add new taxonomy NOT hierarchical
+}
+
+add_action('init', 'awesome_custom_taxonomies');
