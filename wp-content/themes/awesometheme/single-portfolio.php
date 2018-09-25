@@ -19,17 +19,14 @@
 					<?php endif;?>
 
 					<small>
+						<?php echo awesome_get_terms( $post->ID, 'field'); ?>
+						 || 
+						<?php echo awesome_get_terms( $post->ID, 'software'); ?>						 
 
-					<?php foreach( wp_get_post_terms( $post->ID, 'field' ) as $i => $term ):?>				
-						<?php echo ( $i > 0 )? ', ' . $term->name : $term->name;?>
-					<?php endforeach;?>
-					 || 
-					<?php foreach( wp_get_post_terms( $post->ID, 'software' ) as $i => $term ):?>				
-						<?php echo ( $i > 0 )? ', ' . $term->name : $term->name;?>
-					<?php endforeach;?> 
-					 || <?php edit_post_link();?>
-					 					 	
-					 </small>
+						<?php if ( current_user_can( 'manage_options' ) ): // if user can edit ?>
+							<?php echo '||'; edit_post_link();?>
+						<?php endif; ?>
+					</small>
 					
 					<?php the_content(); ?>
 

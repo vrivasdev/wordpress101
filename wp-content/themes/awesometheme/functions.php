@@ -134,6 +134,11 @@ function awesome_custom_post_type (){
 
 add_action('init', 'awesome_custom_post_type'); // we call the inicialization before the theme runs
 
+/*
+	======================================
+	  Custom Taxonomy
+	======================================
+*/
 function awesome_custom_taxonomies() {
 
 	// add new taxonomy hierarchical
@@ -173,3 +178,21 @@ function awesome_custom_taxonomies() {
 }
 
 add_action('init', 'awesome_custom_taxonomies');
+
+/*
+	======================================
+	  Custom Term Function
+	======================================
+*/
+function awesome_get_terms( $postID, $term ) {
+
+	$output = '';
+	
+	foreach( wp_get_post_terms( $postID, $term ) as $i => $term ){
+		
+		$link   = '<a href="' . get_term_link( $term ) . '">' . $term->name . '</a>';		
+		$output .= ( $i > 0 )? ', ' . $link : $link;
+	}
+
+	return $output;
+}
