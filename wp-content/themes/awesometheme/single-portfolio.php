@@ -18,7 +18,18 @@
 
 					<?php endif;?>
 
-					<small><?php the_category(' ');?> || <?php the_tags();?> || <?php edit_post_link();?></small>
+					<small>
+
+					<?php foreach( wp_get_post_terms( $post->ID, 'field' ) as $i => $term ):?>				
+						<?php echo ( $i > 0 )? ', ' . $term->name : $term->name;?>
+					<?php endforeach;?>
+					 || 
+					<?php foreach( wp_get_post_terms( $post->ID, 'software' ) as $i => $term ):?>				
+						<?php echo ( $i > 0 )? ', ' . $term->name : $term->name;?>
+					<?php endforeach;?> 
+					 || <?php edit_post_link();?>
+					 					 	
+					 </small>
 					
 					<?php the_content(); ?>
 
